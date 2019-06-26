@@ -2,12 +2,13 @@ from tkinter import *
 
 root = Tk()
 
-textLable = Label(root,text = '您所下载的电影含有未成年人限制内容，\n请满18周岁后观看！',
-                  justify=LEFT,padx = 10)
-textLable.pack(side = LEFT)
-
-photo  =  PhotoImage(file="18.gif")
-imgLable = Label(root,image=photo)
-imgLable.pack()
-
+photo = PhotoImage(file='18.gif')
+theLable = Label(root,
+                 text='学习python\n到哔哩哔哩',
+                 justify=LEFT,
+                 image = photo,
+                 compound=CENTER,
+                 font=("华康少女字体",20),
+                 fg = "purple")
+theLable.pack()
 mainloop()
